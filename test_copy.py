@@ -14,7 +14,7 @@ st.set_page_config(
     #  initial_sidebar_state="expanded",
 )
 
-loaded_model = joblib.load('prac_model.pkl')
+loaded_model = joblib.load('prac2_model.pkl')
 
 with st.sidebar:
     st.image("ggilook.PNG")
