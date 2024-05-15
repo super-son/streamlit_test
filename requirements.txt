@@ -1,0 +1,10 @@
+joblib
+matplotlib
+numpy
+pandas
+plotly
+ply
+streamlit
+scikit-learn
+time
+warnings
