@@ -19,7 +19,7 @@ st.set_page_config(
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-# background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
+background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
 background-color: "#FFD8D8";
 background-size: cover;
 background-position: center center;
