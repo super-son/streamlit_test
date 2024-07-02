@@ -1,5 +1,5 @@
 # streamlit run test_copy.py
-
+import sklearn
 import streamlit as st
 import time
 import pandas as pd
