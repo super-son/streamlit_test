@@ -10,22 +10,29 @@ import pickle
 warnings.filterwarnings('ignore')
 
 st.set_page_config(
-     page_title='Streamlit cheat sheet',
-     layout="centered",
-    #  initial_sidebar_state="expanded",
+    page_title="Custom Theme",
+    page_icon="🎨",
+    layout="centered",
+    initial_sidebar_state="auto",
 )
 
 # Custom CSS to override default theme
 custom_css = """
 <style>
-    body {
+    /* 전체 배경 색상 설정 */
+    .css-1d391kg {
         background-color: #FFD8D8;
-        color: #000000;
     }
-    .css-18e3th9 {
+    /* 본문 배경 색상 설정 */
+    .css-1v3fvcr, .css-1y4p8pa {
         background-color: #FFFFFF;
     }
-    .css-1v3fvcr {
+    /* 텍스트 색상 설정 */
+    .css-10trblm, .css-k1vhr4 {
+        color: #000000;
+    }
+    /* 글꼴 설정 */
+    .css-10trblm, .css-k1vhr4, .css-1v3fvcr, .css-1y4p8pa {
         font-family: monospace;
     }
 </style>
