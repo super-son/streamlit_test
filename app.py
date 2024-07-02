@@ -15,7 +15,8 @@ st.set_page_config(
     #  initial_sidebar_state="expanded",
 )
 
-loaded_model = joblib.load('prac2_model.pkl')
+with open('prac3_model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
 
 with st.sidebar:
     st.image("ggilook.PNG")
