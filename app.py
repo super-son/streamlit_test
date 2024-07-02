@@ -16,22 +16,21 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-page_bg_img = f"""
+# Custom CSS to override default theme
+custom_css = """
 <style>
-[data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
-background-color: "#FFD8D8";
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: local;
-}}
-[data-testid="stHeader"] {{
-background: rgba(0,0,0,0);
-}}
+[data-testid="stAppViewContainer"] > .main {
+    background-color: #FFD8D8;
+    color: #000000;
+}
+[data-testid="stHeader"] {
+    background: rgba(0,0,0,0);
+}
 </style>
 """
-st.markdown(page_bg_img, unsafe_allow_html=True) 
+
+# Inject custom CSS
+st.markdown(custom_css, unsafe_allow_html=True)
 
 # with open('prac3_model.pkl', 'rb') as f:
 #     loaded_model = pickle.load(f)
