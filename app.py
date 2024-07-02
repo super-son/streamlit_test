@@ -16,15 +16,25 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-# Custom CSS to override default theme
 custom_css = """
 <style>
 [data-testid="stAppViewContainer"] > .main {
     background-color: #FFD8D8;
     color: #000000;
+    font-family: monospace;
 }
 [data-testid="stHeader"] {
     background: rgba(0,0,0,0);
+}
+[data-testid="stSidebar"] {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: monospace;
+}
+[data-testid="stSidebarNav"] {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: monospace;
 }
 </style>
 """
