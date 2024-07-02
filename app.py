@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import joblib
 import warnings
+import pickle
 warnings.filterwarnings('ignore')
 
 st.set_page_config(
@@ -14,7 +15,8 @@ st.set_page_config(
     #  initial_sidebar_state="expanded",
 )
 
-loaded_model = joblib.load('prac2_model.pkl')
+with open('prac2_model.pkl', 'rb') as f:
+    loaded_model = pickle.load(f)
 
 with st.sidebar:
     st.image("ggilook.PNG")
