@@ -9,6 +9,12 @@ import warnings
 import pickle
 warnings.filterwarnings('ignore')
 
+st.set_page_config(
+     page_title='Streamlit cheat sheet',
+     layout="centered",
+    #  initial_sidebar_state="expanded",
+)
+
 """
 This is a custom theme. You can enable it by copying the following code
 to `.streamlit/config.toml`:
