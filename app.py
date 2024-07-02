@@ -15,25 +15,24 @@ st.set_page_config(
     #  initial_sidebar_state="expanded",
 )
 
+# Custom CSS to override default theme
+custom_css = """
+<style>
+    body {
+        background-color: #FFD8D8;
+        color: #000000;
+    }
+    .css-18e3th9 {
+        background-color: #FFFFFF;
+    }
+    .css-1v3fvcr {
+        font-family: monospace;
+    }
+</style>
 """
-This is a custom theme. You can enable it by copying the following code
-to `.streamlit/config.toml`:
 
-```python
-[theme]
-primaryColor="#FFFFFF"
-backgroundColor="#FFD8D8"
-secondaryBackgroundColor="#FFFFF"
-textColor="#000000"
-font="monospace"
-```
-"""
-
-st.set_page_config(
-     page_title='Streamlit cheat sheet',
-     layout="centered",
-    #  initial_sidebar_state="expanded",
-)
+# Inject custom CSS
+st.markdown(custom_css, unsafe_allow_html=True)
 
 # with open('prac3_model.pkl', 'rb') as f:
 #     loaded_model = pickle.load(f)
