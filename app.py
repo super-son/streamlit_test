@@ -16,10 +16,11 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-"""
+page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
+# background-image: url("https://i.postimg.cc/4xgNnkfX/Untitled-design.png");
+background-color: "#FFD8D8";
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -30,6 +31,7 @@ background: rgba(0,0,0,0);
 }}
 </style>
 """
+st.markdown(page_bg_img, unsafe_allow_html=True) 
 
 # with open('prac3_model.pkl', 'rb') as f:
 #     loaded_model = pickle.load(f)
