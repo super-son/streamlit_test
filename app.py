@@ -9,6 +9,20 @@ import warnings
 import pickle
 warnings.filterwarnings('ignore')
 
+"""
+This is a custom theme. You can enable it by copying the following code
+to `.streamlit/config.toml`:
+
+```python
+[theme]
+primaryColor="#FFFFFF"
+backgroundColor="#FFD8D8"
+secondaryBackgroundColor="#FFFFF"
+textColor="#000000"
+font="monospace"
+```
+"""
+
 st.set_page_config(
      page_title='Streamlit cheat sheet',
      layout="centered",
