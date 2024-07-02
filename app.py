@@ -16,30 +16,14 @@ st.set_page_config(
     initial_sidebar_state="auto",
 )
 
-# Custom CSS to override default theme
-custom_css = """
-<style>
-    /* 전체 배경 색상 설정 */
-    .css-1d391kg {
-        background-color: #FFD8D8;
-    }
-    /* 본문 배경 색상 설정 */
-    .css-1v3fvcr, .css-1y4p8pa {
-        background-color: #FFFFFF;
-    }
-    /* 텍스트 색상 설정 */
-    .css-10trblm, .css-k1vhr4 {
-        color: #000000;
-    }
-    /* 글꼴 설정 */
-    .css-10trblm, .css-k1vhr4, .css-1v3fvcr, .css-1y4p8pa {
-        font-family: monospace;
-    }
-</style>
-"""
-
-# Inject custom CSS
-st.markdown(custom_css, unsafe_allow_html=True)
+st.code("""
+[theme]
+primaryColor="#F39C12"
+backgroundColor="#2E86C1"
+secondaryBackgroundColor="#AED6F1"
+textColor="#FFFFFF"
+font="monospace"
+""")
 
 # with open('prac3_model.pkl', 'rb') as f:
 #     loaded_model = pickle.load(f)
